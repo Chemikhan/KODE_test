@@ -32,10 +32,13 @@ int find_type_itr(std::vector<Object> objects,std::string type_to_look, int * ty
  **/
 bool compareDistance(Object o1, Object o2);
 
+/**
+ *  @brief A function to compare sorting counter of two objects.
+ **/
 bool compareSortingCounter(Object o1, Object o2);
 
 /**
- *  @brief A function to compare creation time between two objects.
+ *  @brief A function to compare creation time of two objects.
  **/
 bool compareTime(Object o1, Object o2);
 

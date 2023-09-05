@@ -1,14 +1,6 @@
 #include "file_management.hpp"
 
 
-std::size_t stringToSize_t(std::string str)
-{	
-	std::stringstream sstream(str);
-	size_t result;
-	sstream >> result;
-	return result;
-}
-
 std::string write_object(Object obj)
 {
     std::string str;
@@ -26,7 +18,6 @@ std::string write_object(Object obj)
 }
 
 std::vector<Object> read_csv(std::string file_name){
-    // std::setlocale(LC_ALL, "Russian");
     std::vector<Object> data;
     std::string line, word, temp;
     std::ifstream file;
@@ -53,7 +44,6 @@ std::vector<Object> read_csv(std::string file_name){
 }
 
 void write_csv(std::string file_name, std::vector<Object> data_to_write){
-    std::setlocale(LC_ALL, "Russian");
     std::ofstream file;
     std::string filename = "files/";
     filename += file_name;
