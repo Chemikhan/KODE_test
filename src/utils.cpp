@@ -26,7 +26,6 @@ std::vector<std::vector<int>> string_to_vector(std::string string_to_convert){
 
 }
 
-
 int find_name_first_letter(std::vector<Object> objects,std::vector<int> letter_to_look){
     int max_size_of_letter = 2;
     std::vector<int> first_letter;
